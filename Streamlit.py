@@ -137,7 +137,7 @@ df = pd.read_csv('Movies.csv')
 # most_kategoty = df
 most_kategoty = df['genre'].value_counts().to_frame(name='count')
 st.write(most_kategoty)
-most_kategoty.plot(kind= 'bar', ax= ax2, figsize=(19, 10))
+most_kategoty.plot(kind= 'bar', ax= ax2, figsize=(5, 5))
 ax2.set_xlabel('genre')
 ax2.set_ylabel('count')
 st.pyplot(fig2)
